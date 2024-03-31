@@ -23,7 +23,7 @@ struct ScreenData{
 extension String{
     func textSize(fitWidth: CGFloat,fontSize: CGFloat) -> CGSize{
         let size = CGSize(width: fitWidth,height:CGFloat.greatestFiniteMagnitude)
-        return textSize(
+        return textSize(size: size, font: UIFont.fitSize(size: fontSize))
     }
             
     func textSize(size: CGSize,font: UIFont) -> CGSize {
@@ -50,5 +50,13 @@ extension String{
     }
     
     
+}
+
+
+
+extension UIFont {
+    class func fitSize(size: CGFloat) -> UIFont {
+        return UIFont.systemFont(ofSize:size);
+    }
 }
 
