@@ -16,6 +16,10 @@
 		5C8A25822BB0F6C0006D8E28 /* momentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8A25812BB0F6C0006D8E28 /* momentTests.swift */; };
 		5C8A258C2BB0F6C0006D8E28 /* momentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8A258B2BB0F6C0006D8E28 /* momentUITests.swift */; };
 		5C8A258E2BB0F6C0006D8E28 /* momentUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8A258D2BB0F6C0006D8E28 /* momentUITestsLaunchTests.swift */; };
+		5C8A259C2BB22FCE006D8E28 /* MessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8A259B2BB22FCE006D8E28 /* MessageModel.swift */; };
+		5C8A26032BB70CA3006D8E28 /* MomentConfigPara.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8A26022BB70CA3006D8E28 /* MomentConfigPara.swift */; };
+		5C8A26062BB73220006D8E28 /* AppExtensionConf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8A26052BB73220006D8E28 /* AppExtensionConf.swift */; };
+		5C8A26092BB739C0006D8E28 /* UIConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8A26082BB739C0006D8E28 /* UIConfig.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		5C8A25872BB0F6C0006D8E28 /* momentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = momentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C8A258B2BB0F6C0006D8E28 /* momentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = momentUITests.swift; sourceTree = "<group>"; };
 		5C8A258D2BB0F6C0006D8E28 /* momentUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = momentUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5C8A259B2BB22FCE006D8E28 /* MessageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageModel.swift; sourceTree = "<group>"; };
+		5C8A26022BB70CA3006D8E28 /* MomentConfigPara.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomentConfigPara.swift; sourceTree = "<group>"; };
+		5C8A26052BB73220006D8E28 /* AppExtensionConf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppExtensionConf.swift; sourceTree = "<group>"; };
+		5C8A26082BB739C0006D8E28 /* UIConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIConfig.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +107,9 @@
 		5C8A25692BB0F6BF006D8E28 /* moment */ = {
 			isa = PBXGroup;
 			children = (
+				5C8A26072BB73879006D8E28 /* Config */,
+				5C8A26042BB731F2006D8E28 /* extension */,
+				5C8A259A2BB22FB1006D8E28 /* Models */,
 				5C8A256A2BB0F6BF006D8E28 /* AppDelegate.swift */,
 				5C8A256C2BB0F6BF006D8E28 /* SceneDelegate.swift */,
 				5C8A256E2BB0F6BF006D8E28 /* ViewController.swift */,
@@ -125,6 +136,31 @@
 				5C8A258D2BB0F6C0006D8E28 /* momentUITestsLaunchTests.swift */,
 			);
 			path = momentUITests;
+			sourceTree = "<group>";
+		};
+		5C8A259A2BB22FB1006D8E28 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5C8A259B2BB22FCE006D8E28 /* MessageModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5C8A26042BB731F2006D8E28 /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				5C8A26052BB73220006D8E28 /* AppExtensionConf.swift */,
+			);
+			path = extension;
+			sourceTree = "<group>";
+		};
+		5C8A26072BB73879006D8E28 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				5C8A26022BB70CA3006D8E28 /* MomentConfigPara.swift */,
+				5C8A26082BB739C0006D8E28 /* UIConfig.swift */,
+			);
+			path = Config;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +295,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C8A256F2BB0F6BF006D8E28 /* ViewController.swift in Sources */,
+				5C8A259C2BB22FCE006D8E28 /* MessageModel.swift in Sources */,
+				5C8A26092BB739C0006D8E28 /* UIConfig.swift in Sources */,
 				5C8A256B2BB0F6BF006D8E28 /* AppDelegate.swift in Sources */,
+				5C8A26062BB73220006D8E28 /* AppExtensionConf.swift in Sources */,
 				5C8A256D2BB0F6BF006D8E28 /* SceneDelegate.swift in Sources */,
+				5C8A26032BB70CA3006D8E28 /* MomentConfigPara.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,6 +482,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = moment/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -469,6 +510,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = moment/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
