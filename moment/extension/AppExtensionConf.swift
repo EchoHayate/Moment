@@ -60,3 +60,34 @@ extension UIFont {
     }
 }
 
+
+extension UIColor {
+    convenience init(hexString: String) {
+        
+        assert(hexString.count > 5, "这不是一个十六进制的字符串: \(hexString)")
+        
+        var subHex = hexString;
+        if hexString.count > 6 {
+            subHex = String(hexString[hexString.index(after: hexString.index(hexString.endIndex, offsetBy: -7))...]);
+        }
+        let scanner = Scanner(string: subHex);
+        var rgbValue: UInt64 = 0;
+        scanner.scanHexInt64(&rgbValue);
+        let r = (rgbValue & 0xff0000) >> 16;
+        let g = (rgbValue & 0xff00) >> 8;
+        let b = (rgbValue & 0xff);
+        
+        if #available(iOS 10.0, *) {
+            self.init(displayP3Red: CGFloat(r) / 255.0, green: CGFloat(g) / 255.0, blue: CGFloat(b) / 255.0, alpha: 1)
+        } else {
+            // Fallback on earlier versions
+            self.init(red: CGFloat(r) / 255.0, green: CGFloat(g) / 255.0, blue: CGFloat(b) / 255.0, alpha: 1);
+        };
+    }
+    
+    class var random: UIColor {
+        let color = rgbColor(r: Int(arc4random_uniform(255)), g: Int(arc4random_uniform(255)), b: Int(arc4random_uniform(255)));
+        return color;
+    }
+    
+}
