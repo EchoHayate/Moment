@@ -33,6 +33,8 @@ enum RelationFileKey: String {
 
 class RelationManager: NSObject{
     
+    fileprivate static let instance = RelationManager();
+    fileprivate let paramter = NSMutableDictionary();
     
     class  func setKey(key: RelationFileKey,value: Any?) {
          instance.paramter[key.rawValue] = value;

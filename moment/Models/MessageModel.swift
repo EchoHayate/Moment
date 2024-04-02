@@ -158,14 +158,16 @@ class CommentModel: NSObject {
     
 }
 
+class TextModel: MessageModel {
+    
+}
+
 class CommentItemModel: NSObject {
     var name = ""; //name
     var id = ""; // usrname id
     var profile = ""// avatar
     
-    
-    
-    
+
 }
 
 

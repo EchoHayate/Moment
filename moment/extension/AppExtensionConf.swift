@@ -13,7 +13,7 @@ import CommonCrypto
 
 
 struct ScreenData{
-    static var bounds:CGRect{ return UIscreen.main.bounds}
+    static var bounds:CGRect{ return UIScreen.main.bounds}
     static var width:CGFloat{ return bounds.width}
     static var height: CGFloat{ return ScreenData.bounds.height}
     
@@ -91,3 +91,28 @@ extension UIColor {
     }
     
 }
+
+
+extension UIImage {
+    
+    
+    
+    
+}
+
+
+extension NotificationCenter{
+    
+    static func add(observer: Any,selector:Selector,name:NotificationNameDelegate){
+        NotificationCenter.default.addObserver(observer, selector: selector, name: name.customName, object: nil);
+    }
+    
+    
+    
+    
+    static func addTo<T: NotificationActionDelegate>(observer: T,name: NotificationNameDelegate) -> Void {
+        let selector = NSSelectorFromString("noticationAction:");
+        NotificationCenter.add(observer: observer, selector: selector, name: name);
+    }
+}
+

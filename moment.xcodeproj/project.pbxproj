@@ -22,6 +22,7 @@
 		5C8A26092BB739C0006D8E28 /* UIConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8A26082BB739C0006D8E28 /* UIConfig.swift */; };
 		5C8A260B2BB9FCD1006D8E28 /* RelationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8A260A2BB9FCD1006D8E28 /* RelationManager.swift */; };
 		5C8A260D2BBA0351006D8E28 /* DataBaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8A260C2BBA0351006D8E28 /* DataBaseManager.swift */; };
+		5C8A260F2BBC1C64006D8E28 /* AppDelegateExtenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8A260E2BBC1C64006D8E28 /* AppDelegateExtenstion.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		5C8A26082BB739C0006D8E28 /* UIConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIConfig.swift; sourceTree = "<group>"; };
 		5C8A260A2BB9FCD1006D8E28 /* RelationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelationManager.swift; sourceTree = "<group>"; };
 		5C8A260C2BBA0351006D8E28 /* DataBaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseManager.swift; sourceTree = "<group>"; };
+		5C8A260E2BBC1C64006D8E28 /* AppDelegateExtenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateExtenstion.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				5C8A26052BB73220006D8E28 /* AppExtensionConf.swift */,
+				5C8A260E2BBC1C64006D8E28 /* AppDelegateExtenstion.swift */,
 			);
 			path = extension;
 			sourceTree = "<group>";
@@ -307,6 +310,7 @@
 				5C8A26092BB739C0006D8E28 /* UIConfig.swift in Sources */,
 				5C8A256B2BB0F6BF006D8E28 /* AppDelegate.swift in Sources */,
 				5C8A26062BB73220006D8E28 /* AppExtensionConf.swift in Sources */,
+				5C8A260F2BBC1C64006D8E28 /* AppDelegateExtenstion.swift in Sources */,
 				5C8A256D2BB0F6BF006D8E28 /* SceneDelegate.swift in Sources */,
 				5C8A26032BB70CA3006D8E28 /* MomentConfigPara.swift in Sources */,
 			);
