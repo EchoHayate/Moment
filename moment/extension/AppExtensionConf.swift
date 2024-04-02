@@ -116,3 +116,9 @@ extension NotificationCenter{
     }
 }
 
+extension NSNotification.Name: NotificationNameDelegate {
+    var customName: NSNotification.Name {
+        return self;
+    }
+}
+

@@ -19,7 +19,7 @@ class DataBaseManager: NSObject,NotificationActionDelegate {
     private let maxCount = 100;
     private override init() {
         super.init();
-        NotificationCenter.addTo(observer: self, name: UIApplication.didReceiveMemoryWarningNotification);
+        NotificationCenter.addTo(observer: self, name: UIApplication.didReceiveMemoryWarningNotification)
         
     }
     
