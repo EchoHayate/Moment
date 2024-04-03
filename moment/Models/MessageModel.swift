@@ -186,3 +186,62 @@ extension NSAttributedString {
         return string.MD5String;
     }
 }
+
+class ImageModel: MessageModel {
+    var urlString = "";
+    var image: UIImage!
+ 
+    override var topHeight: CGFloat {
+        let ht = super.topHeight;
+        return ht + 200;
+    }
+    var supHeight: CGFloat {
+        return super.topHeight;
+    }
+}
+
+
+class MultiImageModel: MessageModel {
+    var images: [UIImage]!
+    var count = 8 {
+        didSet{
+            count = count > 8 ? 8: count;
+            images.removeAll();
+            for idx in 0...count {
+                images.append(UIImage(named: "\(idx).jpg")!);
+            }
+        }
+    }
+
+    
+    override func configData() {
+        images = [UIImage]();
+        for idx in 0...count {
+            images.append(UIImage(named: "\(idx).jpg")!);
+        }
+    }
+    
+    //for square images, height=width
+    override var topHeight: CGFloat {
+        if images == nil {
+            return super.topHeight;
+        }
+        let perWidth = (MomentConfigPara.maxWidth - 8 - 40) / 3 + 4;
+        let row = ceil(Double(images.count) / 3.0)
+        return super.topHeight + perWidth * CGFloat(row);
+    }
+    
+    var supTopHeight: CGFloat {
+        return super.topHeight;
+    }
+    
+    var cellImageHeight: CGFloat {
+        return topHeight - super.topHeight;
+    }
+}
+
+
+
+
+
+
