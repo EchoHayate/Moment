@@ -21,6 +21,16 @@ struct ScreenData{
 
 
 extension String{
+    
+    private static let clsPrex = Bundle.main.infoDictionary?["CFBundleExecutable"] as? String;
+    var clsType: AnyClass? {
+        if let cName = String.clsPrex {
+            return NSClassFromString(cName + "." + self);
+        }
+        return nil;
+    }
+    
+    
     func textSize(fitWidth: CGFloat,fontSize: CGFloat) -> CGSize{
         let size = CGSize(width: fitWidth,height:CGFloat.greatestFiniteMagnitude)
         return textSize(size: size, font: UIFont.fitSize(size: fontSize))
@@ -122,3 +132,9 @@ extension NSNotification.Name: NotificationNameDelegate {
     }
 }
 
+
+extension Int {
+    var cgFloat: CGFloat {
+        return CGFloat(self);
+    }
+}

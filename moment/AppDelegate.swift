@@ -10,10 +10,20 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        window = UIWindow(frame: UIScreen.main.bounds);
+        window?.backgroundColor = UIColor.white;
+        
+        let ctrl = MomentController();
+        let navictrl = UINavigationController(rootViewController: ctrl);
+        window?.rootViewController = navictrl;
+        ctrl.title = "朋友圈";
+        
+        
+        window?.makeKeyAndVisible();
         return true
     }
 

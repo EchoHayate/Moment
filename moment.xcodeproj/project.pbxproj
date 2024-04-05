@@ -33,6 +33,10 @@
 		5C8A26222BBD9910006D8E28 /* ExtensionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8A26212BBD990F006D8E28 /* ExtensionView.swift */; };
 		5C8A26252BBEF007006D8E28 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8A26242BBEF007006D8E28 /* BaseView.swift */; };
 		5C8A26282BBEFABC006D8E28 /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8A26272BBEFABC006D8E28 /* BaseController.swift */; };
+		5C8A262A2BC026FC006D8E28 /* MomentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8A26292BC026FC006D8E28 /* MomentController.swift */; };
+		5C8A262C2BC02D05006D8E28 /* data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8A262B2BC02D05006D8E28 /* data.swift */; };
+		5C8A262E2BC03A67006D8E28 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8A262D2BC03A67006D8E28 /* BaseViewController.swift */; };
+		5C8A26302BC056A0006D8E28 /* BaseTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8A262F2BC056A0006D8E28 /* BaseTableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +87,10 @@
 		5C8A26212BBD990F006D8E28 /* ExtensionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionView.swift; sourceTree = "<group>"; };
 		5C8A26242BBEF007006D8E28 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		5C8A26272BBEFABC006D8E28 /* BaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
+		5C8A26292BC026FC006D8E28 /* MomentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomentController.swift; sourceTree = "<group>"; };
+		5C8A262B2BC02D05006D8E28 /* data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = data.swift; sourceTree = "<group>"; };
+		5C8A262D2BC03A67006D8E28 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		5C8A262F2BC056A0006D8E28 /* BaseTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +141,7 @@
 		5C8A25692BB0F6BF006D8E28 /* moment */ = {
 			isa = PBXGroup;
 			children = (
+				5C8A26202BBD7BED006D8E28 /* Cell */,
 				5C8A26262BBEFA95006D8E28 /* Controller */,
 				5C8A26232BBEEFF8006D8E28 /* View */,
 				5C8A26172BBD760D006D8E28 /* assert */,
@@ -146,7 +155,6 @@
 				5C8A25732BB0F6C0006D8E28 /* Assets.xcassets */,
 				5C8A25752BB0F6C0006D8E28 /* LaunchScreen.storyboard */,
 				5C8A25782BB0F6C0006D8E28 /* Info.plist */,
-				5C8A26202BBD7BED006D8E28 /* Cell */,
 			);
 			path = moment;
 			sourceTree = "<group>";
@@ -172,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				5C8A259B2BB22FCE006D8E28 /* MessageModel.swift */,
+				5C8A262B2BC02D05006D8E28 /* data.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -223,6 +232,7 @@
 			isa = PBXGroup;
 			children = (
 				5C8A26242BBEF007006D8E28 /* BaseView.swift */,
+				5C8A262F2BC056A0006D8E28 /* BaseTableView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -231,6 +241,8 @@
 			isa = PBXGroup;
 			children = (
 				5C8A26272BBEFABC006D8E28 /* BaseController.swift */,
+				5C8A26292BC026FC006D8E28 /* MomentController.swift */,
+				5C8A262D2BC03A67006D8E28 /* BaseViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -373,11 +385,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C8A256F2BB0F6BF006D8E28 /* ViewController.swift in Sources */,
+				5C8A262A2BC026FC006D8E28 /* MomentController.swift in Sources */,
 				5C8A26252BBEF007006D8E28 /* BaseView.swift in Sources */,
 				5C8A26282BBEFABC006D8E28 /* BaseController.swift in Sources */,
+				5C8A26302BC056A0006D8E28 /* BaseTableView.swift in Sources */,
 				5C8A260D2BBA0351006D8E28 /* DataBaseManager.swift in Sources */,
 				5C8A260B2BB9FCD1006D8E28 /* RelationManager.swift in Sources */,
 				5C8A259C2BB22FCE006D8E28 /* MessageModel.swift in Sources */,
+				5C8A262E2BC03A67006D8E28 /* BaseViewController.swift in Sources */,
 				5C8A26092BB739C0006D8E28 /* UIConfig.swift in Sources */,
 				5C8A256B2BB0F6BF006D8E28 /* AppDelegate.swift in Sources */,
 				5C8A261F2BBD7BDE006D8E28 /* ConfigCell.swift in Sources */,
@@ -386,6 +401,7 @@
 				5C8A256D2BB0F6BF006D8E28 /* SceneDelegate.swift in Sources */,
 				5C8A26222BBD9910006D8E28 /* ExtensionView.swift in Sources */,
 				5C8A26032BB70CA3006D8E28 /* MomentConfigPara.swift in Sources */,
+				5C8A262C2BC02D05006D8E28 /* data.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
