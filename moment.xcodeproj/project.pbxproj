@@ -37,6 +37,9 @@
 		5C8A262C2BC02D05006D8E28 /* data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8A262B2BC02D05006D8E28 /* data.swift */; };
 		5C8A262E2BC03A67006D8E28 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8A262D2BC03A67006D8E28 /* BaseViewController.swift */; };
 		5C8A26302BC056A0006D8E28 /* BaseTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8A262F2BC056A0006D8E28 /* BaseTableView.swift */; };
+		5C8A26342BC0A630006D8E28 /* 7.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 5C8A26312BC0A630006D8E28 /* 7.jpeg */; };
+		5C8A26352BC0A630006D8E28 /* 0.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 5C8A26322BC0A630006D8E28 /* 0.jpeg */; };
+		5C8A26362BC0A630006D8E28 /* 8.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 5C8A26332BC0A630006D8E28 /* 8.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +94,9 @@
 		5C8A262B2BC02D05006D8E28 /* data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = data.swift; sourceTree = "<group>"; };
 		5C8A262D2BC03A67006D8E28 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		5C8A262F2BC056A0006D8E28 /* BaseTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableView.swift; sourceTree = "<group>"; };
+		5C8A26312BC0A630006D8E28 /* 7.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 7.jpeg; sourceTree = "<group>"; };
+		5C8A26322BC0A630006D8E28 /* 0.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 0.jpeg; sourceTree = "<group>"; };
+		5C8A26332BC0A630006D8E28 /* 8.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 8.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -209,6 +215,9 @@
 		5C8A26172BBD760D006D8E28 /* assert */ = {
 			isa = PBXGroup;
 			children = (
+				5C8A26322BC0A630006D8E28 /* 0.jpeg */,
+				5C8A26312BC0A630006D8E28 /* 7.jpeg */,
+				5C8A26332BC0A630006D8E28 /* 8.jpeg */,
 				5C8A26112BBD760D006D8E28 /* 1.jpg */,
 				5C8A26122BBD760D006D8E28 /* 2.jpeg */,
 				5C8A26132BBD760D006D8E28 /* 3.jpeg */,
@@ -352,10 +361,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C8A26192BBD760D006D8E28 /* 2.jpeg in Resources */,
+				5C8A26352BC0A630006D8E28 /* 0.jpeg in Resources */,
+				5C8A26362BC0A630006D8E28 /* 8.jpeg in Resources */,
 				5C8A25742BB0F6C0006D8E28 /* Assets.xcassets in Resources */,
 				5C8A26182BBD760D006D8E28 /* 1.jpg in Resources */,
 				5C8A261A2BBD760D006D8E28 /* 3.jpeg in Resources */,
 				5C8A261B2BBD760D006D8E28 /* 4.jpeg in Resources */,
+				5C8A26342BC0A630006D8E28 /* 7.jpeg in Resources */,
 				5C8A25772BB0F6C0006D8E28 /* Base in Resources */,
 				5C8A261D2BBD760D006D8E28 /* 6.jpeg in Resources */,
 				5C8A25722BB0F6BF006D8E28 /* Base in Resources */,

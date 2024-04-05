@@ -217,7 +217,13 @@ class MultiImageModel: MessageModel {
     override func configData() {
         images = [UIImage]();
         for idx in 0...count {
-            images.append(UIImage(named: "\(idx).jpg")!);
+            if let image = UIImage(named: "\(idx).jpg") {
+                images.append(image)
+            } else {
+                print("Failed to load image \(idx).jpg")
+            }
+
+            //images.append(UIImage(named: "\(idx).jpg")!);
         }
     }
     
