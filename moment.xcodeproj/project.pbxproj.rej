@@ -1,0 +1,49 @@
+diff a/moment.xcodeproj/project.pbxproj b/moment.xcodeproj/project.pbxproj	(rejected hunks)
+@@ -8,7 +8,6 @@
+ 
+ /* Begin PBXBuildFile section */
+ 		5C8A256B2BB0F6BF006D8E28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8A256A2BB0F6BF006D8E28 /* AppDelegate.swift */; };
+-		5C8A256D2BB0F6BF006D8E28 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8A256C2BB0F6BF006D8E28 /* SceneDelegate.swift */; };
+ 		5C8A256F2BB0F6BF006D8E28 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8A256E2BB0F6BF006D8E28 /* ViewController.swift */; };
+ 		5C8A25722BB0F6BF006D8E28 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 5C8A25712BB0F6BF006D8E28 /* Base */; };
+ 		5C8A25742BB0F6C0006D8E28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C8A25732BB0F6C0006D8E28 /* Assets.xcassets */; };
+@@ -65,7 +64,6 @@
+ /* Begin PBXFileReference section */
+ 		5C8A25672BB0F6BF006D8E28 /* moment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = moment.app; sourceTree = BUILT_PRODUCTS_DIR; };
+ 		5C8A256A2BB0F6BF006D8E28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+-		5C8A256C2BB0F6BF006D8E28 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+ 		5C8A256E2BB0F6BF006D8E28 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+ 		5C8A25712BB0F6BF006D8E28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+ 		5C8A25732BB0F6C0006D8E28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+@@ -161,7 +159,6 @@
+ 				5C8A26042BB731F2006D8E28 /* extension */,
+ 				5C8A259A2BB22FB1006D8E28 /* Models */,
+ 				5C8A256A2BB0F6BF006D8E28 /* AppDelegate.swift */,
+-				5C8A256C2BB0F6BF006D8E28 /* SceneDelegate.swift */,
+ 				5C8A256E2BB0F6BF006D8E28 /* ViewController.swift */,
+ 				5C8A25702BB0F6BF006D8E28 /* Main.storyboard */,
+ 				5C8A25732BB0F6C0006D8E28 /* Assets.xcassets */,
+@@ -422,7 +419,6 @@
+ 				5C8A263C2BC0B6E7006D8E28 /* BaseCollectionView.swift in Sources */,
+ 				5C8A26062BB73220006D8E28 /* AppExtensionConf.swift in Sources */,
+ 				5C8A260F2BBC1C64006D8E28 /* AppDelegateExtenstion.swift in Sources */,
+-				5C8A256D2BB0F6BF006D8E28 /* SceneDelegate.swift in Sources */,
+ 				5C8A26222BBD9910006D8E28 /* ExtensionView.swift in Sources */,
+ 				5C8A26032BB70CA3006D8E28 /* MomentConfigPara.swift in Sources */,
+ 				5C8A262C2BC02D05006D8E28 /* data.swift in Sources */,
+@@ -615,6 +611,7 @@
+ 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+ 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+ 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
++				IPHONEOS_DEPLOYMENT_TARGET = 15.3;
+ 				LD_RUNPATH_SEARCH_PATHS = (
+ 					"$(inherited)",
+ 					"@executable_path/Frameworks",
+@@ -643,6 +640,7 @@
+ 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+ 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+ 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
++				IPHONEOS_DEPLOYMENT_TARGET = 15.3;
+ 				LD_RUNPATH_SEARCH_PATHS = (
+ 					"$(inherited)",
+ 					"@executable_path/Frameworks",
