@@ -23,7 +23,7 @@ enum MessageModelType: String{
 
 class MessageModel:NSObject{
     
-    var name = "no"
+    var name = "halo"
     var modelType: MessageModelType!
     var contentText:String!
     
@@ -45,12 +45,20 @@ class MessageModel:NSObject{
         if contentText == nil{
             return CGSize.zero
         }
-        if contentText != nil{
+        if _contextSize != nil{
             return _contextSize
         }
         
         _contextSize = contentText.textSize(size: CGSize(
             width:MomentConfigPara.maxWidth,height:CGFloat.greatestFiniteMagnitude),font: MomentConfigPara.textFont)
+//        guard let contentText = contentText else {
+//                return CGSize.zero
+//            }
+//            
+//            if _contextSize == nil {
+//                _contextSize = contentText.textSize(size: CGSize(
+//                    width: MomentConfigPara.maxWidth, height: CGFloat.greatestFiniteMagnitude), font: MomentConfigPara.textFont)
+//            }
         
         return _contextSize
         }
@@ -189,8 +197,8 @@ extension NSAttributedString {
 
 class ImageModel: MessageModel {
     var urlString = "";
-    var image: UIImage!
- 
+    var image = UIImage(named: "1.jpg");
+    
     override var topHeight: CGFloat {
         let ht = super.topHeight;
         return ht + 200;

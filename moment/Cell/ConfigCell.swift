@@ -137,7 +137,7 @@ class GroupCell: UITableViewCell {
         }
         
         
-        if let cell = self as? TextCell {
+        if  self is TextCell {
             
             var rect = tabBarView.frame;
             rect.origin.y = entity.topHeight;
