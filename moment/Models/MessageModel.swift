@@ -13,7 +13,7 @@ import UIKit
 enum MessageModelType: String{
     case text = "TextCell"//only text
     case image = "ImageCell"//only one iamge
-    case MutiImage = "MutiImageCell"//for mutiple images
+    case MutiImage = "MultiImageCell"//for mutiple images
     case new = "NewCell"
     case video = "VideoCell"
     case ad //advertisement

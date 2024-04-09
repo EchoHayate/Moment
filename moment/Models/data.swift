@@ -45,16 +45,17 @@ func createComments() -> [CommentModel] {
     first.person = firstPerson
     list.append(first)
     
+    
     let second = CommentModel()
     let secondPerson = CommentItemModel()
     secondPerson.name = "Cortana"
     secondPerson.id = "2"
     second.person = secondPerson
-    let secondEnd = CommentItemModel()
-    secondEnd.name = "Arbiter"
-    secondEnd.id = "3"
-    second.endPeseron = secondEnd
-    second.content = "Halo features a rich and immersive universe with deep lore and memorable characters."
+//    let secondEnd = CommentItemModel()
+//    secondEnd.name = "Arbiter"
+//    secondEnd.id = "3"
+//    second.endPeseron = secondEnd
+//    second.content = "Halo features a rich and immersive universe with deep lore and memorable characters."
     
     list.append(second)
     
