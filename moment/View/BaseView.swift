@@ -12,11 +12,11 @@ class BaseView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame);
         backgroundColor = UIColor.white;
-        ConfigSubView();
+        configSubView();
         
     }
-    func ConfigSubView() -> Void {
-        //need to override in the subclass
+    func configSubView() -> Void {
+        
     }
     
     required init?(coder aDecoder: NSCoder) {

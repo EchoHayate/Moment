@@ -47,6 +47,7 @@ class GroupCell: UITableViewCell {
     var comments: [CommentModel]! {
         didSet{
             configComment();
+            print("1")
         }
     }
     
@@ -134,6 +135,7 @@ class GroupCell: UITableViewCell {
             rect = label.frame;
             rect.size = entity.contextSize;
             label.frame = rect;
+            
         }
         
         
@@ -196,6 +198,7 @@ class GroupCell: UITableViewCell {
             rect.origin.y = tabBarView.maxY;
             rect.size.height = entity.commentHeight;
             cView.frame = rect;
+            
             
         }
         
@@ -314,7 +317,7 @@ class OperationView: BaseView {
     var leftTime: UILabel!
     var rightBar: UIButton!
     var rightLabel: UILabel!
-    override func ConfigSubView() {
+    override func configSubView() {
         
         
         leftTime = createLabel(rect: .init(x: 0, y: 0, width: width/2, height: height), text: "3分钟前");
@@ -335,11 +338,95 @@ class OperationView: BaseView {
 //comment view
 class CommentItemView: BaseView {
     
+    private var selecteItem: (model: CommentItemModel,selectedRect: CGRect,selectedType:CommentItemSelectedType)?
+
+    
     
     fileprivate var comments: [CommentModel]!{
         didSet{
             
             setNeedsDisplay();
+        
         }
     }
+    
+    override func configSubView() {
+        backgroundColor = UIColor.white;
+        contentMode = .redraw;
+    }
+
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        
+        let point = touches.first!.location(in: self);
+        
+        for item in  comments{
+            guard  let model = item.containsPoint(point: point) else{
+                continue;
+            }
+            selecteItem = model;
+            break;
+        }
+        if let drawRect = selecteItem?.selectedRect{
+            setNeedsDisplay(drawRect);
+        }
+    }
+    
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        selecteItem = nil;
+        setNeedsDisplay();
+    }
+    override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
+        touchesEnded(touches, with: event);
+    }
+    
+    
+    
+    override func draw(_ rect: CGRect) {
+        super.draw(rect);
+        
+        if comments == nil {
+            return;
+        }
+        
+        
+        if let drawRect = selecteItem?.selectedRect {
+            let context = UIGraphicsGetCurrentContext();
+            context?.setFillColor(rgbColor(rgb: 224).cgColor);
+            context?.addRect(drawRect);
+            context?.fillPath();
+        }else{
+            
+            let context = UIGraphicsGetCurrentContext();
+            let path = CGMutablePath();
+            path.move(to: CGPoint(x: 0, y: 10));
+            path.addLine(to: CGPoint(x: 10, y: 10));
+            path.addLine(to: CGPoint(x: 20, y: 0));
+            path.addLine(to: CGPoint(x: 30, y: 10));
+            path.addLine(to: CGPoint(x: width, y: 10));
+            path.addLine(to: CGPoint(x: width, y: height));
+            path.addLine(to: CGPoint(x: 0, y: height));
+            path.addLine(to: CGPoint(x: 0, y: 10));
+            context?.addPath(path);
+            context?.setFillColor(rgbColor(rgb: 245).cgColor);
+            context?.fillPath();
+        }
+        drawTextContent(rect: rect);
+    }
+    
+    func drawTextContent(rect: CGRect) -> Void {
+        
+        var py: CGFloat = 14;
+        
+        for (_,item) in comments.enumerated() {
+            
+            let content = item.getContentText();
+            let sRect = CGRect(x: 4, y: py, width: item.size.width, height: item.size.height);
+            content.draw(with:  sRect, options: [.usesFontLeading,.usesLineFragmentOrigin], context: nil);
+            py += item.size.height + 4;
+            item.orgin = sRect.origin;
+        }
+    }
+    
+    
+    
 }

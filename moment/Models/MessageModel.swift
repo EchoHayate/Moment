@@ -27,6 +27,7 @@ class MessageModel:NSObject{
     var modelType: MessageModelType!
     var contentText:String!
     
+    
     init(type: MessageModelType){
         super.init()
         modelType = type
@@ -113,6 +114,21 @@ class CommentModel: NSObject {
     
     private let highlitedDict = [NSAttributedString.Key.foregroundColor:UIColor.red];
     
+    private var replayRange: NSRange {
+        return NSRange(location: pmRange.upperBound, length: reply.count);
+    }
+    
+    private var replySize: CGSize {
+        return getContentText().attributedSubstring(from: replayRange).boundSize();
+    }
+    
+    var endNameSize: CGSize {
+        if endPeseron == nil {
+            return CGSize.zero;
+        }
+        let size = getContentText().attributedSubstring(from: endRange!).boundSize();
+        return size;
+    }
     
     private var _size: CGSize!;
     var size: CGSize {
@@ -122,6 +138,33 @@ class CommentModel: NSObject {
         let size = getContentText().boundSize();
         _size = size;
         return _size;
+    }
+    
+    var orgin: CGPoint!
+    
+    var nameSize: CGSize {
+        return getContentText().attributedSubstring(from: pmRange).boundSize();
+    }
+    
+    func containsPoint(point: CGPoint) -> (CommentItemModel,CGRect,CommentItemSelectedType)? {
+        if orgin == nil {
+            return nil;
+        }
+        let cRect = CGRect(origin: orgin, size: size);
+        guard cRect.contains(point) else {
+            return nil
+        }
+        let nRect = CGRect(origin: orgin, size: nameSize);
+        if  nRect.contains(point) {
+//            return (person,pmRange);
+            return (person,nRect,CommentItemSelectedType.name);
+
+        }
+        let endRect = CGRect(origin: CGPoint(x: nRect.maxX + replySize.width, y: nRect.minY), size: endNameSize);
+        if endRect.contains(point) {
+            return (endPeseron,endRect,CommentItemSelectedType.name);
+        }
+        return endPeseron == nil ? (person,cRect,CommentItemSelectedType.text) : (endPeseron,cRect,CommentItemSelectedType.text);
     }
     
     
@@ -159,6 +202,31 @@ class CommentModel: NSObject {
             return attribute;
         }
         
+     
+        
+        
+
+        func containsPoint(point: CGPoint) -> (CommentItemModel,CGRect,CommentItemSelectedType)? {
+            if orgin == nil {
+                return nil;
+            }
+            let cRect = CGRect(origin: orgin, size: size);
+            guard cRect.contains(point) else {
+                return nil
+            }
+            let nRect = CGRect(origin: orgin, size: nameSize);
+            if  nRect.contains(point) {
+    //            return (person,pmRange);
+                return (person,nRect,CommentItemSelectedType.name);
+
+            }
+            let endRect = CGRect(origin: CGPoint(x: nRect.maxX + replySize.width, y: nRect.minY), size: endNameSize);
+            if endRect.contains(point) {
+                return (endPeseron,endRect,CommentItemSelectedType.name);
+            }
+            return endPeseron == nil ? (person,cRect,CommentItemSelectedType.text) : (endPeseron,cRect,CommentItemSelectedType.text);
+        }
+        
     }
 
     
@@ -193,6 +261,12 @@ extension NSAttributedString {
     var mainKey: String {
         return string.MD5String;
     }
+}
+
+enum CommentItemSelectedType {
+    case known
+    case name
+    case text
 }
 
 class ImageModel: MessageModel {

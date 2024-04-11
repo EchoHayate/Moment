@@ -36,7 +36,7 @@ func createData() -> [MessageModel] {
 
 func createComments() -> [CommentModel] {
     var list = [CommentModel]()
-    
+    print(3)
     let first = CommentModel()
     let firstPerson = CommentItemModel()
     firstPerson.name = "John"
@@ -51,14 +51,16 @@ func createComments() -> [CommentModel] {
     secondPerson.name = "Cortana"
     secondPerson.id = "2"
     second.person = secondPerson
-//    let secondEnd = CommentItemModel()
-//    secondEnd.name = "Arbiter"
-//    secondEnd.id = "3"
-//    second.endPeseron = secondEnd
-//    second.content = "Halo features a rich and immersive universe with deep lore and memorable characters."
+    
+    let secondEnd = CommentItemModel()
+    secondEnd.name = "John"
+    secondEnd.id = "3"
+    second.endPeseron = secondEnd
+    second.content = "Halo features a rich and immersive universe with deep lore and memorable characters."
     
     list.append(second)
-    
+    print(list)
     return list
+    
 }
 
