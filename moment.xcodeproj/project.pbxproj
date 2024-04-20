@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0659952D1B44B9CF1B91C412 /* Pods_moment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C11EA4C3CDB5E5C98CAC1ED8 /* Pods_moment.framework */; };
+		303E13256CDB08D4A4B7EC82 /* Pods_momentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84B4CCA9BCCA1A69CE913EDC /* Pods_momentTests.framework */; };
 		5C8A256B2BB0F6BF006D8E28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8A256A2BB0F6BF006D8E28 /* AppDelegate.swift */; };
 		5C8A256F2BB0F6BF006D8E28 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8A256E2BB0F6BF006D8E28 /* ViewController.swift */; };
 		5C8A25722BB0F6BF006D8E28 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 5C8A25712BB0F6BF006D8E28 /* Base */; };
@@ -42,6 +44,7 @@
 		5C8A26382BC0B399006D8E28 /* ScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8A26372BC0B399006D8E28 /* ScrollView.swift */; };
 		5C8A263A2BC0B51D006D8E28 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8A26392BC0B51D006D8E28 /* PhotoViewController.swift */; };
 		5C8A263C2BC0B6E7006D8E28 /* BaseCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8A263B2BC0B6E7006D8E28 /* BaseCollectionView.swift */; };
+		A2AE7187E418D43EB0E3A3E8 /* Pods_moment_momentUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53C1B38856F846DD6C368B1F /* Pods_moment_momentUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +65,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3654C30461BD6D7BFF08968B /* Pods-moment-momentUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-moment-momentUITests.release.xcconfig"; path = "Target Support Files/Pods-moment-momentUITests/Pods-moment-momentUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4A67080ABBE0E25D7AA423E6 /* Pods-momentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-momentTests.release.xcconfig"; path = "Target Support Files/Pods-momentTests/Pods-momentTests.release.xcconfig"; sourceTree = "<group>"; };
+		53C1B38856F846DD6C368B1F /* Pods_moment_momentUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_moment_momentUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C8A25672BB0F6BF006D8E28 /* moment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = moment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C8A256A2BB0F6BF006D8E28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5C8A256E2BB0F6BF006D8E28 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -101,6 +107,12 @@
 		5C8A26372BC0B399006D8E28 /* ScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollView.swift; sourceTree = "<group>"; };
 		5C8A26392BC0B51D006D8E28 /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
 		5C8A263B2BC0B6E7006D8E28 /* BaseCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionView.swift; sourceTree = "<group>"; };
+		84B4CCA9BCCA1A69CE913EDC /* Pods_momentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_momentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A17B793CC6B8A7D2533B6241 /* Pods-momentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-momentTests.debug.xcconfig"; path = "Target Support Files/Pods-momentTests/Pods-momentTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AA35AFAA98B55BA818EAD3D4 /* Pods-moment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-moment.release.xcconfig"; path = "Target Support Files/Pods-moment/Pods-moment.release.xcconfig"; sourceTree = "<group>"; };
+		C11EA4C3CDB5E5C98CAC1ED8 /* Pods_moment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_moment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E74BB89C005CED984178B4E4 /* Pods-moment-momentUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-moment-momentUITests.debug.xcconfig"; path = "Target Support Files/Pods-moment-momentUITests/Pods-moment-momentUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F6A470463AA548EFECA7FE8A /* Pods-moment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-moment.debug.xcconfig"; path = "Target Support Files/Pods-moment/Pods-moment.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +120,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0659952D1B44B9CF1B91C412 /* Pods_moment.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,6 +128,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				303E13256CDB08D4A4B7EC82 /* Pods_momentTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,6 +136,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2AE7187E418D43EB0E3A3E8 /* Pods_moment_momentUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,6 +150,8 @@
 				5C8A25802BB0F6C0006D8E28 /* momentTests */,
 				5C8A258A2BB0F6C0006D8E28 /* momentUITests */,
 				5C8A25682BB0F6BF006D8E28 /* Products */,
+				619D37E59FEBFBAB1AB6C4BB /* Pods */,
+				EAAE93B6C21A2FCF851BD7AB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -262,6 +279,30 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		619D37E59FEBFBAB1AB6C4BB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F6A470463AA548EFECA7FE8A /* Pods-moment.debug.xcconfig */,
+				AA35AFAA98B55BA818EAD3D4 /* Pods-moment.release.xcconfig */,
+				E74BB89C005CED984178B4E4 /* Pods-moment-momentUITests.debug.xcconfig */,
+				3654C30461BD6D7BFF08968B /* Pods-moment-momentUITests.release.xcconfig */,
+				A17B793CC6B8A7D2533B6241 /* Pods-momentTests.debug.xcconfig */,
+				4A67080ABBE0E25D7AA423E6 /* Pods-momentTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EAAE93B6C21A2FCF851BD7AB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C11EA4C3CDB5E5C98CAC1ED8 /* Pods_moment.framework */,
+				53C1B38856F846DD6C368B1F /* Pods_moment_momentUITests.framework */,
+				84B4CCA9BCCA1A69CE913EDC /* Pods_momentTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -269,9 +310,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5C8A25912BB0F6C0006D8E28 /* Build configuration list for PBXNativeTarget "moment" */;
 			buildPhases = (
+				CDABE83E06754EF45AE36059 /* [CP] Check Pods Manifest.lock */,
 				5C8A25632BB0F6BF006D8E28 /* Sources */,
 				5C8A25642BB0F6BF006D8E28 /* Frameworks */,
 				5C8A25652BB0F6BF006D8E28 /* Resources */,
+				6D8660544776C598E3281771 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -286,6 +329,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5C8A25942BB0F6C0006D8E28 /* Build configuration list for PBXNativeTarget "momentTests" */;
 			buildPhases = (
+				CA73D0948AE78FBAF43372C7 /* [CP] Check Pods Manifest.lock */,
 				5C8A25792BB0F6C0006D8E28 /* Sources */,
 				5C8A257A2BB0F6C0006D8E28 /* Frameworks */,
 				5C8A257B2BB0F6C0006D8E28 /* Resources */,
@@ -304,9 +348,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5C8A25972BB0F6C0006D8E28 /* Build configuration list for PBXNativeTarget "momentUITests" */;
 			buildPhases = (
+				7F5F743C346751786EE7BC62 /* [CP] Check Pods Manifest.lock */,
 				5C8A25832BB0F6C0006D8E28 /* Sources */,
 				5C8A25842BB0F6C0006D8E28 /* Frameworks */,
 				5C8A25852BB0F6C0006D8E28 /* Resources */,
+				CF1C5D929195E4BE79833DC4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -396,6 +442,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6D8660544776C598E3281771 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-moment/Pods-moment-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-moment/Pods-moment-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-moment/Pods-moment-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7F5F743C346751786EE7BC62 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-moment-momentUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA73D0948AE78FBAF43372C7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-momentTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CDABE83E06754EF45AE36059 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-moment-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF1C5D929195E4BE79833DC4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-moment-momentUITests/Pods-moment-momentUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-moment-momentUITests/Pods-moment-momentUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-moment-momentUITests/Pods-moment-momentUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5C8A25632BB0F6BF006D8E28 /* Sources */ = {
@@ -598,6 +747,7 @@
 		};
 		5C8A25922BB0F6C0006D8E28 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6A470463AA548EFECA7FE8A /* Pods-moment.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -627,6 +777,7 @@
 		};
 		5C8A25932BB0F6C0006D8E28 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA35AFAA98B55BA818EAD3D4 /* Pods-moment.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -656,6 +807,7 @@
 		};
 		5C8A25952BB0F6C0006D8E28 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A17B793CC6B8A7D2533B6241 /* Pods-momentTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -675,6 +827,7 @@
 		};
 		5C8A25962BB0F6C0006D8E28 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A67080ABBE0E25D7AA423E6 /* Pods-momentTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -694,6 +847,7 @@
 		};
 		5C8A25982BB0F6C0006D8E28 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E74BB89C005CED984178B4E4 /* Pods-moment-momentUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -711,6 +865,7 @@
 		};
 		5C8A25992BB0F6C0006D8E28 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3654C30461BD6D7BFF08968B /* Pods-moment-momentUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
