@@ -5,6 +5,8 @@
 //  Created by Allen Wu on 25/03/2024.
 //
 
+import MMKV
+
 import UIKit
 
 @UIApplicationMain
@@ -16,6 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         window = UIWindow(frame: UIScreen.main.bounds);
         window?.backgroundColor = UIColor.white;
+        
+   
         
         let ctrl = MomentController();
         

@@ -1,0 +1,12 @@
+Target dependency graph (5 targets)
+Target 'Pods-momentTests' in project 'Pods'
+➜ Explicit dependency on target 'Pods-moment' in project 'Pods'
+Target 'Pods-moment-momentUITests' in project 'Pods'
+➜ Explicit dependency on target 'MMKV' in project 'Pods'
+➜ Explicit dependency on target 'MMKVCore' in project 'Pods'
+Target 'Pods-moment' in project 'Pods'
+➜ Explicit dependency on target 'MMKV' in project 'Pods'
+➜ Explicit dependency on target 'MMKVCore' in project 'Pods'
+Target 'MMKV' in project 'Pods'
+➜ Explicit dependency on target 'MMKVCore' in project 'Pods'
+Target 'MMKVCore' in project 'Pods' (no dependencies)
