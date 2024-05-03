@@ -69,7 +69,7 @@
 		4A67080ABBE0E25D7AA423E6 /* Pods-momentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-momentTests.release.xcconfig"; path = "Target Support Files/Pods-momentTests/Pods-momentTests.release.xcconfig"; sourceTree = "<group>"; };
 		53C1B38856F846DD6C368B1F /* Pods_moment_momentUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_moment_momentUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C8A25672BB0F6BF006D8E28 /* moment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = moment.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		5C8A256A2BB0F6BF006D8E28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5C8A256A2BB0F6BF006D8E28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; wrapsLines = 0; };
 		5C8A256E2BB0F6BF006D8E28 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5C8A25712BB0F6BF006D8E28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5C8A25732BB0F6C0006D8E28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };

@@ -7,7 +7,7 @@
 
 import Foundation
 import UIKit
-
+import MMKV
 
 enum JHSCellKey {
     case cell
@@ -303,6 +303,8 @@ class MultiImageCell: GroupCell {
             obs?.perform(sel, with: [JHSCellKey.cell:self,JHSCellKey.imgIndex:index]);
         }
     }
+    
+    
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         fetchImageIndex(touches, isEnd: true);
     }
@@ -316,7 +318,28 @@ class OperationView: BaseView {
     
     var leftTime: UILabel!
     var rightBar: UIButton!
-    var rightLabel: UILabel!
+    var rightButton: UILabel!
+//    var rightButton: UIButton!
+    
+//    override init(leftTime: UILabel!, rightBar: UIButton!, rightButton: UIButton!) {
+// 
+//        self.rightButton = rightButton
+//        
+//    }
+    func LikedIcon (){
+        rightButton = createLabel(rect: .init(x: leftTime.maxX, y: 0, width: width/2, height: height), text: "点赞");
+        rightButton.textAlignment = .right;
+        rightButton.textColor = MomentConfigPara.LikeColor;
+        rightButton.font = MomentConfigPara.textFont;
+    }
+    
+    func UnlikedIcon (){
+        rightButton = createLabel(rect: .init(x: leftTime.maxX, y: 0, width: width/2, height: height), text: "点赞");
+        rightButton.textAlignment = .right;
+        rightButton.textColor = MomentConfigPara.textColor;
+        rightButton.font = MomentConfigPara.textFont;
+    }
+    
     override func configSubView() {
         
         
@@ -325,12 +348,47 @@ class OperationView: BaseView {
         leftTime.font = MomentConfigPara.textFont;
         
         
-        rightLabel = createLabel(rect: .init(x: leftTime.maxX, y: 0, width: width/2, height: height), text: "点赞");
-        rightLabel.textAlignment = .right;
-        rightLabel.textColor = MomentConfigPara.textColor;
-        rightLabel.font = MomentConfigPara.textFont;
+        guard let mmkv = MMKV(mmapID: "testSwift", mode: MMKVMode.singleProcess) else {
+                    return
+                }
+
+        if mmkv.bool(forKey: "IsLiked") == nil {
+                    mmkv.set(false, forKey: "IsLiked")
+                }
+        
+        if mmkv.bool(forKey:"IsLiked") == false {
+            LikedIcon()
+        } else {
+            UnlikedIcon()
+        }
+        
+        
+        
+//        LikeButton = UIButton(type: .system)
+//        Likebutton.frame = rightButton.frame
+        
         
     }
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        
+        guard let mmkv = MMKV(mmapID: "testSwift", mode: MMKVMode.singleProcess) else {
+                    return
+                }
+        if mmkv.bool(forKey:"IsLiked") == false{
+            LikedIcon()
+            mmkv.set(true,forKey:"IsLiked")
+        } else {
+            UnlikedIcon()
+            mmkv.set(false,forKey:"IsLiked")
+        }
+        
+    }
+    
+    
+    override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
+        
+    }
+
     
     
     

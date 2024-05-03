@@ -37,8 +37,6 @@
 		4DAFAADC22D02A9EED6D9EE848BFA159 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75D6FFD0A2A010AF218F5734629C73B6 /* Foundation.framework */; };
 		4EECBB1DCCF8B6B0B97164EBA6072600 /* openssl_aes-armv4.S in Sources */ = {isa = PBXBuildFile; fileRef = 00915F8BC497423CE1F9E70DB0FB5528 /* openssl_aes-armv4.S */; };
 		5CAC37CD10047BEABA35EF1A00F40C64 /* MMKV-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE45EA7DBEE31F2E4C83F08CC749CC0 /* MMKV-dummy.m */; };
-		5CD04D052BD4283A0034DD1E /* MMKV in Headers */ = {isa = PBXBuildFile; fileRef = B88A54159B245E727A6D16DEFE105A09 /* MMKV */; };
-		5CD04D062BD4284B0034DD1E /* MMKVCore in Headers */ = {isa = PBXBuildFile; fileRef = E0B603F54009DAEF6C3BAAE621E5F180 /* MMKVCore */; };
 		6047BA3332B9C07738CB45C106AE7647 /* MMKVCore-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 488B65C8E6196F87FDCF02E307558DCA /* MMKVCore-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		614E6A9E458E3B146B7FE22D0DF2B98F /* openssl_aes.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D5411AA202D333E5F6C7331296A1CE3 /* openssl_aes.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		6160C30EFBD135D35AD2F134D9F60824 /* CodedInputData_OSX.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 46B8FC4A80F7D21380394D0C089F02FB /* CodedInputData_OSX.cpp */; settings = {COMPILER_FLAGS = "-x objective-c++ -fno-objc-arc"; }; };
@@ -139,7 +137,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00915F8BC497423CE1F9E70DB0FB5528 /* openssl_aes-armv4.S */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.asm; name = "openssl_aes-armv4.S"; path = "Core/aes/openssl/openssl_aes-armv4.S"; sourceTree = "<group>"; };
+		00915F8BC497423CE1F9E70DB0FB5528 /* openssl_aes-armv4.S */ = {isa = PBXFileReference; includeInIndex = 1; name = "openssl_aes-armv4.S"; path = "Core/aes/openssl/openssl_aes-armv4.S"; sourceTree = "<group>"; };
 		0201D2531A9B34AD8CEB4A1BC5850A97 /* CodedInputData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CodedInputData.h; path = Core/CodedInputData.h; sourceTree = "<group>"; };
 		027E99F4418E2C01976799E81284FB93 /* MMKVPredef.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMKVPredef.h; path = Core/MMKVPredef.h; sourceTree = "<group>"; };
 		03FE1FCB39510B2510297A8A2E7DE717 /* Pods-moment */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-moment"; path = Pods_moment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -158,7 +156,7 @@
 		2ADAC0ECFEF0975AE126EBDC31C75F09 /* PBUtility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PBUtility.h; path = Core/PBUtility.h; sourceTree = "<group>"; };
 		2E34C32485CD089DD55595C6586C790E /* openssl_aes_core.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = openssl_aes_core.cpp; path = Core/aes/openssl/openssl_aes_core.cpp; sourceTree = "<group>"; };
 		2EFD53F4B653F57DE4C6AA18C55FE9B5 /* MMKV_IO.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMKV_IO.h; path = Core/MMKV_IO.h; sourceTree = "<group>"; };
-		2F721FF9994FFC2A2B0399CBF992B1A5 /* libMMKV.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = libMMKV.mm; path = iOS/MMKV/MMKV/libMMKV.mm; sourceTree = "<group>"; };
+		2F721FF9994FFC2A2B0399CBF992B1A5 /* libMMKV.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = libMMKV.mm; path = iOS/MMKV/MMKV/libMMKV.mm; sourceTree = "<group>"; };
 		3516344AA7ADF7CF774952A0BFE45E91 /* MMBuffer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMBuffer.h; path = Core/MMBuffer.h; sourceTree = "<group>"; };
 		3A2C44D1A47564D02956A30E0C81D407 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CoreFoundation.framework; sourceTree = DEVELOPER_DIR; };
 		3F0C04382CEF2F96700788E096FD569B /* Pods-moment-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-moment-Info.plist"; sourceTree = "<group>"; };
@@ -177,7 +175,7 @@
 		667E2806CCFF178DF153CD3D6874DF24 /* MMKV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MMKV.release.xcconfig; sourceTree = "<group>"; };
 		6699826BAE1B54F148F9E64D75B34F13 /* MMKV-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MMKV-prefix.pch"; sourceTree = "<group>"; };
 		6755033A3198C24891DF0797D8E152E3 /* ScopedLock.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = ScopedLock.hpp; path = Core/ScopedLock.hpp; sourceTree = "<group>"; };
-		67CB72CAF637DA1EF5662F2E442918F7 /* openssl_aesv8-armx.S */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.asm; name = "openssl_aesv8-armx.S"; path = "Core/aes/openssl/openssl_aesv8-armx.S"; sourceTree = "<group>"; };
+		67CB72CAF637DA1EF5662F2E442918F7 /* openssl_aesv8-armx.S */ = {isa = PBXFileReference; includeInIndex = 1; name = "openssl_aesv8-armx.S"; path = "Core/aes/openssl/openssl_aesv8-armx.S"; sourceTree = "<group>"; };
 		682673AD1F5AD55DC869135F7F93F32E /* Pods-moment-momentUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-moment-momentUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		685F332543C1AAC5D1E8C30DD96D4237 /* Pods-momentTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-momentTests-umbrella.h"; sourceTree = "<group>"; };
 		6A49F79545486330605F00A8E7320671 /* KeyValueHolder.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = KeyValueHolder.cpp; path = Core/KeyValueHolder.cpp; sourceTree = "<group>"; };
@@ -208,7 +206,7 @@
 		9799DD8C517BB0E053C69680AA739F5D /* MMKV-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MMKV-umbrella.h"; sourceTree = "<group>"; };
 		98EC47010C53EC717FDB8E743E414B62 /* MemoryFile.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MemoryFile.h; path = Core/MemoryFile.h; sourceTree = "<group>"; };
 		9B58055C0B908EC96BD71FA9C9C64D39 /* MiniPBCoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MiniPBCoder.h; path = Core/MiniPBCoder.h; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A0920264DEADE261D22E5EDC9989D5CE /* Pods-moment-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-moment-dummy.m"; sourceTree = "<group>"; };
 		A0B396BF784B86C67469AAC8FE48DDCD /* PBEncodeItem.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = PBEncodeItem.hpp; path = Core/PBEncodeItem.hpp; sourceTree = "<group>"; };
 		A77C5AB078CF381616DDFFE291AF5D19 /* Pods-moment-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-moment-umbrella.h"; sourceTree = "<group>"; };
@@ -411,6 +409,7 @@
 				DAB9C52A496709CC0C68F3BF6FB4F31F /* ThreadLock_Win32.cpp */,
 				E17CFB0E8E9440E02924A96E82885FC4 /* Support Files */,
 			);
+			name = MMKVCore;
 			path = MMKVCore;
 			sourceTree = "<group>";
 		};
@@ -518,6 +517,7 @@
 				0CA71FCF5D74F45994B228C7336DFFF4 /* MMKVHandler.h */,
 				A25952D35ADEDE3EC2B15FEDA19B7A29 /* Support Files */,
 			);
+			name = MMKV;
 			path = MMKV;
 			sourceTree = "<group>";
 		};
@@ -591,8 +591,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2BC6E04F4E57178C4F59F9CC2DB1512D /* Pods-moment-umbrella.h in Headers */,
-				5CD04D062BD4284B0034DD1E /* MMKVCore in Headers */,
-				5CD04D052BD4283A0034DD1E /* MMKV in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -881,6 +879,41 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		06C118DF656A7866F92F6CB0FCC5F6A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0AA60E07375FF8D9316132BD294CEFC /* MMKVCore.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MMKVCore/MMKVCore-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MMKVCore/MMKVCore-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/MMKVCore/MMKVCore.modulemap";
+				PRODUCT_MODULE_NAME = MMKVCore;
+				PRODUCT_NAME = MMKVCore;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		234FD64284B3D3F0FCBB20A1F1AC6016 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 825FA0FA6A1E21E311FEFE48E50E26D4 /* Pods-momentTests.release.xcconfig */;
@@ -912,6 +945,42 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		397B407FE0BDEE0D1273583AE7777AC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 667E2806CCFF178DF153CD3D6874DF24 /* MMKV.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MMKV/MMKV-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MMKV/MMKV-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/MMKV/MMKV.modulemap";
+				PRODUCT_MODULE_NAME = MMKV;
+				PRODUCT_NAME = MMKV;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -957,6 +1026,41 @@
 			};
 			name = Release;
 		};
+		3AFAEBB00FE5ADE6BA5F9295066F4C7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADADD3722861C0A9C15EA87935410576 /* MMKV.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MMKV/MMKV-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MMKV/MMKV-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/MMKV/MMKV.modulemap";
+				PRODUCT_MODULE_NAME = MMKV;
+				PRODUCT_NAME = MMKV;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		44492DB22F32715CC92DE8FD9D62ADF2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6FC6A6C6296AD65C852EE236B4D301CA /* Pods-moment-momentUITests.debug.xcconfig */;
@@ -994,7 +1098,7 @@
 			};
 			name = Debug;
 		};
-		44589CF34E69CAEBEC5E5AF368A2EC8F /* Release */ = {
+		4FB3C7000FBDC51DF2EF9FAB62786BBC /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DDDB8AC008B555550E2FB62FA0F82833 /* MMKVCore.release.xcconfig */;
 			buildSettings = {
@@ -1010,7 +1114,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/MMKVCore/MMKVCore-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/MMKVCore/MMKVCore-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1029,41 +1133,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		72BF129B19907048A8BA7F413ECF0480 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B0AA60E07375FF8D9316132BD294CEFC /* MMKVCore.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/MMKVCore/MMKVCore-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MMKVCore/MMKVCore-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/MMKVCore/MMKVCore.modulemap";
-				PRODUCT_MODULE_NAME = MMKVCore;
-				PRODUCT_NAME = MMKVCore;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		A6046EC2625847907E13D89E5C077134 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1305,85 +1374,14 @@
 			};
 			name = Debug;
 		};
-		F144195A20F6B8A9B815B7CDC94960D1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = ADADD3722861C0A9C15EA87935410576 /* MMKV.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/MMKV/MMKV-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MMKV/MMKV-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/MMKV/MMKV.modulemap";
-				PRODUCT_MODULE_NAME = MMKV;
-				PRODUCT_NAME = MMKV;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		FD6C220126F4637004D09ADCA4EDB8B9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 667E2806CCFF178DF153CD3D6874DF24 /* MMKV.release.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/MMKV/MMKV-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MMKV/MMKV-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/MMKV/MMKV.modulemap";
-				PRODUCT_MODULE_NAME = MMKV;
-				PRODUCT_NAME = MMKV;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
 		09D8305759934E4156EF779D19B345D4 /* Build configuration list for PBXNativeTarget "MMKV" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F144195A20F6B8A9B815B7CDC94960D1 /* Debug */,
-				FD6C220126F4637004D09ADCA4EDB8B9 /* Release */,
+				3AFAEBB00FE5ADE6BA5F9295066F4C7E /* Debug */,
+				397B407FE0BDEE0D1273583AE7777AC4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1427,8 +1425,8 @@
 		E144F933BC79A003D7FA4658AE22970D /* Build configuration list for PBXNativeTarget "MMKVCore" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				72BF129B19907048A8BA7F413ECF0480 /* Debug */,
-				44589CF34E69CAEBEC5E5AF368A2EC8F /* Release */,
+				06C118DF656A7866F92F6CB0FCC5F6A5 /* Debug */,
+				4FB3C7000FBDC51DF2EF9FAB62786BBC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
