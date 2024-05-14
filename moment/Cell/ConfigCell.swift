@@ -47,7 +47,7 @@ class GroupCell: UITableViewCell {
     var comments: [CommentModel]! {
         didSet{
             configComment();
-            print("1")
+            
         }
     }
     

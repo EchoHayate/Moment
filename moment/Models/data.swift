@@ -28,7 +28,7 @@ func createData() -> [MessageModel] {
     """
     multiImage.count = 3
     multiImage.comment = createComments()
-    print("Top = \(multiImage.supTopHeight)")
+//    print("Top = \(multiImage.supTopHeight)")
     list.append(multiImage)
     
     return list
@@ -36,7 +36,7 @@ func createData() -> [MessageModel] {
 
 func createComments() -> [CommentModel] {
     var list = [CommentModel]()
-    print(3)
+//    print(3)
     let first = CommentModel()
     let firstPerson = CommentItemModel()
     firstPerson.name = "John"
@@ -59,7 +59,7 @@ func createComments() -> [CommentModel] {
     second.content = "Halo features a rich and immersive universe with deep lore and memorable characters."
     
     list.append(second)
-    print(list)
+//    print(list)
     return list
     
 }
