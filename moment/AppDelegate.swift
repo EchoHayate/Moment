@@ -13,6 +13,9 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
+
+    
     override init(){
         print(Thread.current)
         

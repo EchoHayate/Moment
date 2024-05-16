@@ -7,7 +7,7 @@ target 'moment' do
 	
   # Pods for moment
 	pod 'MMKV'
-	
+	pod 'UIKit'
   target 'momentTests' do
     inherit! :search_paths
     # Pods for testing
