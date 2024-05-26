@@ -6,6 +6,8 @@
 //
 
 import Foundation
+import SDWebImage
+import SDWebImageSwiftUI
 import UIKit
 
 //list all the possibilities
@@ -13,6 +15,7 @@ import UIKit
 enum MessageModelType: String{
     case text = "TextCell"//only text
     case image = "ImageCell"//only one iamge
+    case webImage = "WebImageCell"
     case MutiImage = "MultiImageCell"//for mutiple images
     case new = "NewCell"
     case video = "VideoCell"
@@ -270,8 +273,8 @@ enum CommentItemSelectedType {
 }
 
 class ImageModel: MessageModel {
-    var urlString = "";
-    var image = UIImage(named: "1.jpg");
+    var urlString = "https:picsum.photos/id/237/200/300";
+    var image = UIImage(named: "1.jpeg");
     
     override var topHeight: CGFloat {
         let ht = super.topHeight;
@@ -280,10 +283,77 @@ class ImageModel: MessageModel {
     var supHeight: CGFloat {
         return super.topHeight;
     }
+    
+    
+    
+//    func loadImage() {
+//            guard let url = URL(string: urlString) else { return }
+//            
+//            let task = URLSession.shared.dataTask(with: url) { data, response, error in
+//                guard let data = data, error == nil else { return }
+//                
+//                DispatchQueue.main.async {
+//                    self.image = UIImage(data: data)
+//                    // 这里可以更新 UI 或者做其他操作
+//                }
+//            }
+//            
+//            task.resume()
+//        }
+    
 }
 
 
+
+
+class WebImageModel: MessageModel {
+    var image: UIImage?
+
+    override var topHeight: CGFloat {
+        let ht = super.topHeight
+        return ht + 200
+    }
+
+    var supHeight: CGFloat {
+        return super.topHeight
+    }
+
+    func downloadAndSaveImage(from urlString: String) -> MessageModel {
+        guard let url = URL(string: urlString) else { return self}
+        // 使用SDWebImage下载图片
+        let imageView = UIImageView()
+        imageView.sd_setImage(with: url, completed: { [weak self] (downloadedImage, error, cacheType, url) in
+            if let image = downloadedImage {
+                // 图片下载成功，保存到image属性中
+                self?.image = image
+                // 这里可以添加额外的代码来处理下载的图片，例如保存到相册等
+            } else if let error = error {
+                print("图片下载失败: \(error.localizedDescription)")
+            }
+        })
+        return self
+    }
+}
+
+//    imageView.sd_setImage(with: URL(string: "http://www.domain.com/path/to/image.jpg"), placeholderImage: UIImage(named: "placeholder.png"))
+
+//https:picsum.photos/id/237/200/300
+
 class MultiImageModel: MessageModel {
+    
+//    func tableView(tableView: UITableView!, cellForRowAtIndexPath indexPath: NSIndexPath!) -> UITableViewCell! {
+//        let myIdentifier = "MyIdentifier"
+//        let cell = tableView.dequeueReusableCellWithIdentifier(myIdentifier, forIndexPath: indexPath) as UITableViewCell
+//        
+//        cell.imageView.sd_setImageWithURL(imageUrl, placeholderImage:placeholderImage)
+//        return cell
+//    }
+//    
+//    
+//    var body: some View{
+//        
+//    }
+    
     var images: [UIImage]!
     var count = 8 {
         didSet{

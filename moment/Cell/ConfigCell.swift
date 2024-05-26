@@ -158,6 +158,19 @@ class GroupCell: UITableViewCell {
                 rect.origin.y = cell.backImage.maxY;
                 tabBarView.frame = rect;
             }
+        }else if let cell = self as? WebImageCell {
+            
+            if let webImageModel = entity as? WebImageModel {
+                //find out what exactly imageModel ImageModel meaning
+                
+                rect = cell.backImage.frame;
+                rect.origin.y = webImageModel.supHeight;
+                cell.backImage.frame = rect;
+                
+                rect = tabBarView.frame;
+                rect.origin.y = cell.backImage.maxY;
+                tabBarView.frame = rect;
+            }
         }else if let cell = self as? MultiImageCell {
             
             
@@ -212,6 +225,26 @@ class TextCell: GroupCell {
 }
 
 class ImageCell: GroupCell {
+    
+    var backImage: UIImageView!
+    
+    override func configMessage(model: MessageModel) {
+        super.configMessage(model: model);
+        if let cModel = model as? ImageModel {
+            backImage.image = cModel.image;
+        }
+    }
+    
+    
+    override func configSubView() {
+        backImage = createImageView(rect: .init(x: leftPointX, y: topPointY, width: 160, height: 200));
+        addSubview(backImage);
+        backImage.contentMode = .scaleAspectFill;
+        backImage.clipsToBounds = true;
+        
+    }
+}
+class WebImageCell: GroupCell {
     
     var backImage: UIImageView!
     
@@ -352,7 +385,7 @@ class OperationView: BaseView {
                     return
                 }
 
-        if mmkv.bool(forKey: "IsLiked") == nil {
+        if !mmkv.contains(key: "IsLiked") {
                     mmkv.set(false, forKey: "IsLiked")
                 }
         

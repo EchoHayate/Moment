@@ -5,13 +5,7 @@
 //  Created by Allen Wu on 05/04/2024.
 //
 
-//
-//  JHSPhotoViewController.swift
-//  PenGroup
-//
-//  Created by yaojinhai on 2019/3/28.
-//  Copyright © 2019年 yaojinhai. All rights reserved.
-//
+
 
 import UIKit
 

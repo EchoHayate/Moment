@@ -31,6 +31,20 @@ func createData() -> [MessageModel] {
 //    print("Top = \(multiImage.supTopHeight)")
     list.append(multiImage)
     
+//    let url = URL(string: "https://picsum.photos/id/237/200/300")!
+    
+    
+    
+    let webImageModel = WebImageModel(type: .webImage)
+    let webImage = webImageModel.downloadAndSaveImage(from: "https://picsum.photos/id/237/200/300")
+    list.append(webImage)
+
+    let text1 = MessageModel(type: .text)
+    text1.contentText = """
+    Halo is a military science fiction media franchise centered on a series of video games managed and developed by 343 Industries, a division of Xbox Game Studios.
+"""
+    text1.comment = createComments()
+    list.append(text1)
     return list
 }
 

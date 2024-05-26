@@ -14,20 +14,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     
-
-    
-    override init(){
-        print(Thread.current)
-        
-        MMKV.initialize()
-        
-        super.init()
-    }
-
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        
+        MMKV.initialize(rootDir: nil)
         
         // Override point for customization after application launch.
         window = UIWindow(frame: UIScreen.main.bounds);
