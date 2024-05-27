@@ -317,22 +317,55 @@ class WebImageModel: MessageModel {
     var supHeight: CGFloat {
         return super.topHeight
     }
-
     func downloadAndSaveImage(from urlString: String) -> MessageModel {
-        guard let url = URL(string: urlString) else { return self}
-        // 使用SDWebImage下载图片
+        guard let url = URL(string: urlString) else { return self }
+        
+        // 使用SDWebImage下载图片并设置到imageView上
         let imageView = UIImageView()
         imageView.sd_setImage(with: url, completed: { [weak self] (downloadedImage, error, cacheType, url) in
-            if let image = downloadedImage {
-                // 图片下载成功，保存到image属性中
-                self?.image = image
-                // 这里可以添加额外的代码来处理下载的图片，例如保存到相册等
-            } else if let error = error {
-                print("图片下载失败: \(error.localizedDescription)")
+            DispatchQueue.main.async {
+                if let image = downloadedImage {
+                    // 图片下载成功，保存到image属性中
+                    self?.image = image
+                    // 如果需要，将图片缓存到沙盒
+                    SDImageCache.shared.store(image, forKey: url?.absoluteString)
+                    print("图片下载并保存成功")
+                } else if let error = error {
+                    print("图片下载失败: \(error.localizedDescription)")
+                }
             }
         })
+        
         return self
     }
+
+//    func downloadAndSaveImage(from urlString: String) -> MessageModel {
+//        guard let url = URL(string: urlString) else { return self}
+//        // 使用SDWebImage下载图片
+        
+//        let imageView = UIImageView()
+//        imageView.sd_setImage(with: url, completed: { [weak self] (downloadedImage, error, cacheType, url) in
+//            if let image = downloadedImage {
+//                // 图片下载成功，保存到image属性中
+//                DispatchQueue.main.async {
+//                    self?.image = image
+//                }
+//                SDWebImageManager.shared.loadImage(with: url as URL?, options: SDWebImageOptions.highPriority, progress: { (receivedSize:Int,expectedSize:Int,targetURL:URL?) in
+//                    
+//                }, completed:{ (image, data, error, SDImageCacheType, result, url) in
+//                    imageView.image = image;
+//                    // 下载图片后不会将图片缓存到沙盒，需要手动调用SDImageCache.shared.store保存到沙盒
+//                    SDImageCache.shared.store(image, forKey: url?.absoluteString, completion: {
+//                        print("图片保存成功");
+//                    })})
+//        
+//                // 这里可以添加额外的代码来处理下载的图片，例如保存到相册等
+//            } else if let error = error {
+//                print("图片下载失败: \(error.localizedDescription)")
+//            }
+//        })
+//        return self
+//    }
 }
 
 //    imageView.sd_setImage(with: URL(string: "http://www.domain.com/path/to/image.jpg"), placeholderImage: UIImage(named: "placeholder.png"))

@@ -31,6 +31,7 @@ class MomentController: BaseViewController {
         createTable(delegate: self);
         cellsIdentifier.append(.text);
         cellsIdentifier.append(.image);
+        cellsIdentifier.append(.webImage)
         cellsIdentifier.append(.MutiImage);
         cellsIdentifier.append(.new);
         cellsIdentifier.append(.ad);
