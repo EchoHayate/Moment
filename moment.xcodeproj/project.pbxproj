@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		0659952D1B44B9CF1B91C412 /* Pods_moment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C11EA4C3CDB5E5C98CAC1ED8 /* Pods_moment.framework */; };
 		303E13256CDB08D4A4B7EC82 /* Pods_momentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84B4CCA9BCCA1A69CE913EDC /* Pods_momentTests.framework */; };
-		5C8A256B2BB0F6BF006D8E28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8A256A2BB0F6BF006D8E28 /* AppDelegate.swift */; };
 		5C8A256F2BB0F6BF006D8E28 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8A256E2BB0F6BF006D8E28 /* ViewController.swift */; };
 		5C8A25722BB0F6BF006D8E28 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 5C8A25712BB0F6BF006D8E28 /* Base */; };
 		5C8A25742BB0F6C0006D8E28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C8A25732BB0F6C0006D8E28 /* Assets.xcassets */; };
@@ -24,7 +23,7 @@
 		5C8A260B2BB9FCD1006D8E28 /* RelationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8A260A2BB9FCD1006D8E28 /* RelationManager.swift */; };
 		5C8A260D2BBA0351006D8E28 /* DataBaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8A260C2BBA0351006D8E28 /* DataBaseManager.swift */; };
 		5C8A260F2BBC1C64006D8E28 /* AppDelegateExtenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8A260E2BBC1C64006D8E28 /* AppDelegateExtenstion.swift */; };
-		5C8A26182BBD760D006D8E28 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5C8A26112BBD760D006D8E28 /* 1.jpg */; };
+		5C8A26182BBD760D006D8E28 /* 1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 5C8A26112BBD760D006D8E28 /* 1.jpeg */; };
 		5C8A26192BBD760D006D8E28 /* 2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 5C8A26122BBD760D006D8E28 /* 2.jpeg */; };
 		5C8A261A2BBD760D006D8E28 /* 3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 5C8A26132BBD760D006D8E28 /* 3.jpeg */; };
 		5C8A261B2BBD760D006D8E28 /* 4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 5C8A26142BBD760D006D8E28 /* 4.jpeg */; };
@@ -44,6 +43,8 @@
 		5C8A26382BC0B399006D8E28 /* ScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8A26372BC0B399006D8E28 /* ScrollView.swift */; };
 		5C8A263A2BC0B51D006D8E28 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8A26392BC0B51D006D8E28 /* PhotoViewController.swift */; };
 		5C8A263C2BC0B6E7006D8E28 /* BaseCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8A263B2BC0B6E7006D8E28 /* BaseCollectionView.swift */; };
+		5CFDB2942BF7930C00935145 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8A256A2BB0F6BF006D8E28 /* AppDelegate.swift */; };
+		5CFDB2982BFF1BE500935145 /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CFDB2972BFF1BE500935145 /* Example.swift */; };
 		A2AE7187E418D43EB0E3A3E8 /* Pods_moment_momentUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53C1B38856F846DD6C368B1F /* Pods_moment_momentUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -87,7 +88,7 @@
 		5C8A260A2BB9FCD1006D8E28 /* RelationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelationManager.swift; sourceTree = "<group>"; };
 		5C8A260C2BBA0351006D8E28 /* DataBaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseManager.swift; sourceTree = "<group>"; };
 		5C8A260E2BBC1C64006D8E28 /* AppDelegateExtenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateExtenstion.swift; sourceTree = "<group>"; };
-		5C8A26112BBD760D006D8E28 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		5C8A26112BBD760D006D8E28 /* 1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpeg; sourceTree = "<group>"; };
 		5C8A26122BBD760D006D8E28 /* 2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpeg; sourceTree = "<group>"; };
 		5C8A26132BBD760D006D8E28 /* 3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpeg; sourceTree = "<group>"; };
 		5C8A26142BBD760D006D8E28 /* 4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpeg; sourceTree = "<group>"; };
@@ -107,6 +108,7 @@
 		5C8A26372BC0B399006D8E28 /* ScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollView.swift; sourceTree = "<group>"; };
 		5C8A26392BC0B51D006D8E28 /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
 		5C8A263B2BC0B6E7006D8E28 /* BaseCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionView.swift; sourceTree = "<group>"; };
+		5CFDB2972BFF1BE500935145 /* Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
 		84B4CCA9BCCA1A69CE913EDC /* Pods_momentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_momentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A17B793CC6B8A7D2533B6241 /* Pods-momentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-momentTests.debug.xcconfig"; path = "Target Support Files/Pods-momentTests/Pods-momentTests.debug.xcconfig"; sourceTree = "<group>"; };
 		AA35AFAA98B55BA818EAD3D4 /* Pods-moment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-moment.release.xcconfig"; path = "Target Support Files/Pods-moment/Pods-moment.release.xcconfig"; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 		5C8A255E2BB0F6BF006D8E28 = {
 			isa = PBXGroup;
 			children = (
+				5CFDB2972BFF1BE500935145 /* Example.swift */,
 				5C8A25692BB0F6BF006D8E28 /* moment */,
 				5C8A25802BB0F6C0006D8E28 /* momentTests */,
 				5C8A258A2BB0F6C0006D8E28 /* momentUITests */,
@@ -238,7 +241,7 @@
 				5C8A26322BC0A630006D8E28 /* 0.jpeg */,
 				5C8A26312BC0A630006D8E28 /* 7.jpeg */,
 				5C8A26332BC0A630006D8E28 /* 8.jpeg */,
-				5C8A26112BBD760D006D8E28 /* 1.jpg */,
+				5C8A26112BBD760D006D8E28 /* 1.jpeg */,
 				5C8A26122BBD760D006D8E28 /* 2.jpeg */,
 				5C8A26132BBD760D006D8E28 /* 3.jpeg */,
 				5C8A26142BBD760D006D8E28 /* 4.jpeg */,
@@ -415,7 +418,7 @@
 				5C8A26352BC0A630006D8E28 /* 0.jpeg in Resources */,
 				5C8A26362BC0A630006D8E28 /* 8.jpeg in Resources */,
 				5C8A25742BB0F6C0006D8E28 /* Assets.xcassets in Resources */,
-				5C8A26182BBD760D006D8E28 /* 1.jpg in Resources */,
+				5C8A26182BBD760D006D8E28 /* 1.jpeg in Resources */,
 				5C8A261A2BBD760D006D8E28 /* 3.jpeg in Resources */,
 				5C8A261B2BBD760D006D8E28 /* 4.jpeg in Resources */,
 				5C8A26342BC0A630006D8E28 /* 7.jpeg in Resources */,
@@ -550,6 +553,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CFDB2982BFF1BE500935145 /* Example.swift in Sources */,
 				5C8A256F2BB0F6BF006D8E28 /* ViewController.swift in Sources */,
 				5C8A26382BC0B399006D8E28 /* ScrollView.swift in Sources */,
 				5C8A262A2BC026FC006D8E28 /* MomentController.swift in Sources */,
@@ -558,11 +562,11 @@
 				5C8A26302BC056A0006D8E28 /* BaseTableView.swift in Sources */,
 				5C8A260D2BBA0351006D8E28 /* DataBaseManager.swift in Sources */,
 				5C8A260B2BB9FCD1006D8E28 /* RelationManager.swift in Sources */,
+				5CFDB2942BF7930C00935145 /* AppDelegate.swift in Sources */,
 				5C8A259C2BB22FCE006D8E28 /* MessageModel.swift in Sources */,
 				5C8A263A2BC0B51D006D8E28 /* PhotoViewController.swift in Sources */,
 				5C8A262E2BC03A67006D8E28 /* BaseViewController.swift in Sources */,
 				5C8A26092BB739C0006D8E28 /* UIConfig.swift in Sources */,
-				5C8A256B2BB0F6BF006D8E28 /* AppDelegate.swift in Sources */,
 				5C8A261F2BBD7BDE006D8E28 /* ConfigCell.swift in Sources */,
 				5C8A263C2BC0B6E7006D8E28 /* BaseCollectionView.swift in Sources */,
 				5C8A26062BB73220006D8E28 /* AppExtensionConf.swift in Sources */,

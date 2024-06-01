@@ -250,7 +250,7 @@ class WebImageCell: GroupCell {
     
     override func configMessage(model: MessageModel) {
         super.configMessage(model: model);
-        if let cModel = model as? ImageModel {
+        if let cModel = model as? WebImageModel {
             backImage.image = cModel.image;
         }
     }

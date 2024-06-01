@@ -3,3 +3,9 @@
 <plist version="1.0">
 <dict/>
 </plist>
+
+<!--<key>NSAppTransportSecurity</key>-->
+<!--<dict>-->
+<!--    <key>NSAllowsArbitraryLoads</key>-->
+<!--    <true/>-->
+<!--</dict>-->

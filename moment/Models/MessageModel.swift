@@ -317,28 +317,49 @@ class WebImageModel: MessageModel {
     var supHeight: CGFloat {
         return super.topHeight
     }
+//    func downloadAndSaveImage(from urlString: String) -> MessageModel {
+//        guard let url = URL(string: urlString) else { return self }
+//        
+//        // 使用SDWebImage下载图片并设置到imageView上
+//        let imageView = UIImageView()
+//        print("1")
+//        imageView.sd_setImage(with: url, completed: { [ self] (downloadedImage, error, cacheType, url) in
+//            print("下载的图片: \(String(describing: downloadedImage))")
+//            DispatchQueue.main.async {
+//                print("下载的图片: \(String(describing: downloadedImage))")
+//                if let image = downloadedImage {
+//                    // 图片下载成功，保存到image属性中
+//                    self.image = image
+//                    // 如果需要，将图片缓存到沙盒
+//                    SDImageCache.shared.store(image, forKey: url?.absoluteString)
+//                    print("图片下载并保存成功")
+//                } else if let error = error {
+//                    print("图片下载失败: \(error.localizedDescription)")
+//                }
+//            }
+//        })
+//        
+//        return self
+//    }
     func downloadAndSaveImage(from urlString: String) -> MessageModel {
-        guard let url = URL(string: urlString) else { return self }
-        
-        // 使用SDWebImage下载图片并设置到imageView上
-        let imageView = UIImageView()
-        imageView.sd_setImage(with: url, completed: { [weak self] (downloadedImage, error, cacheType, url) in
-            DispatchQueue.main.async {
-                if let image = downloadedImage {
-                    // 图片下载成功，保存到image属性中
-                    self?.image = image
-                    // 如果需要，将图片缓存到沙盒
-                    SDImageCache.shared.store(image, forKey: url?.absoluteString)
-                    print("图片下载并保存成功")
-                } else if let error = error {
-                    print("图片下载失败: \(error.localizedDescription)")
-                }
+            guard let url = URL(string: urlString) else {
+                print("Invalid URL")
+                return self
             }
-        })
-        
-        return self
-    }
+            
+            let imageView = UIImageView()
+            print("Starting image download")
 
+        imageView.sd_setImage(with: url) { (downloadedImage, error, cacheType, url) in
+                    if let error = error {
+                        print("图片下载失败: \(error.localizedDescription)")
+                    } else {
+                        print("图片下载并显示成功: \(url?.absoluteString ?? "Unknown URL")")
+                    }
+                }
+            
+            return self
+        }
 //    func downloadAndSaveImage(from urlString: String) -> MessageModel {
 //        guard let url = URL(string: urlString) else { return self}
 //        // 使用SDWebImage下载图片

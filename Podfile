@@ -7,7 +7,8 @@ target 'moment' do
 	
   # Pods for moment
 	pod 'MMKV'
-	pod 'UIKit'
+	pod 'SDWebImage'
+	pod 'SDWebImageSwiftUI'
   target 'momentTests' do
     inherit! :search_paths
     # Pods for testing
